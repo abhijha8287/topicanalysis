@@ -9,7 +9,8 @@ from langchain_core.output_parsers import StrOutputParser
 
 load_dotenv()
 
-model = ChatOpenAI(temperature=0.9)
+model = ChatOpenAI(model_name="gpt-4", api_key=st.secrets['api_key'], temperature=0)
+
 
 st.title("Detailed Summary Generator & its Summary")
 
